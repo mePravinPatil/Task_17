@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CallbackHell task</title>
+</head>
+<body>
+  <h1> </h1>
+  <script>
+    setTimeout(() => {
+      var heading = document.querySelector('h1')
+      heading.innerHTML = 10;
+      setTimeout(() => {
+        heading.innerHTML = 9;
+        setTimeout(() => {
+          heading.innerHTML = 8;
+          setTimeout(() => {
+            heading.innerHTML = 7;
+            setTimeout(() => {
+              heading.innerHTML = 6;
+              setTimeout(() => {
+                heading.innerHTML = 5;
+                setTimeout(() => {
+                  heading.innerHTML = 4;
+                  setTimeout(() => {
+                    heading.innerHTML = 3;
+                    setTimeout(() => {
+                      heading.innerHTML = 2;
+                      setTimeout(() => {
+                        heading.innerHTML = 1;
+                        setTimeout(() => {
+                          heading.innerHTML = "!!!..Happy Independence Day..!!!";
+                        }, 1000);
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  </script>
+</body>
+</html>
